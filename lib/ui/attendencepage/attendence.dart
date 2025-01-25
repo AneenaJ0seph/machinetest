@@ -1,6 +1,7 @@
 import 'package:cydexflutter_mach/ui/attendencepage/widgets.dart';
 import 'package:flutter/material.dart';
 
+import '../home/home.dart';
 import '../profile.dart';
 import '../results.dart';
 
@@ -12,11 +13,11 @@ class RecordsScreen extends StatefulWidget {
 }
 
 class _RecordsScreenState extends State<RecordsScreen> {
-  int _currentIndex = 1;
+  int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    HomePage(),
-    const RecordsPage(),
+    DashboardScreen(),
+     RecordsPage(),
     ProfilePage(),
   ];
 
@@ -49,17 +50,7 @@ class _RecordsScreenState extends State<RecordsScreen> {
   }
 }
 
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        "Home Page",
-        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-      ),
-    );
-  }
-}
+
 
 class RecordsPage extends StatelessWidget {
   const RecordsPage({super.key});

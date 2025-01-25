@@ -1,3 +1,4 @@
+import 'package:cydexflutter_mach/ui/attendencepage/attendence.dart';
 import 'package:cydexflutter_mach/ui/login.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Login(),
+      home: RecordsScreen(),
     );
   }
 }
